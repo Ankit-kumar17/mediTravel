@@ -1,0 +1,122 @@
+.favorites-header {
+  margin-bottom: 30px;
+}
+
+.favorites-header h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.favorites-header p {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fav-card {
+  padding: 12px;
+}
+
+.fav-content {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.fav-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+.fav-info {
+  flex: 1;
+}
+
+.fav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.fav-top h3 {
+  font-size: 16px;
+}
+
+.fav-info .specialty {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.fav-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.fav-meta .rating {
+  color: #F59E0B;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fav-meta .location {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fav-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+
+.view-profile-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.empty-favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.empty-favorites h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.empty-favorites p {
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}

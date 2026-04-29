@@ -1,0 +1,156 @@
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.profile-header h1 {
+  font-size: 24px;
+}
+
+.settings-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.profile-user-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.user-avatar-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid var(--primary-light);
+}
+
+.user-avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-info h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.user-info p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.user-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.badge, .badge-blue {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.badge { background: #DCFCE7; color: #166534; }
+.badge-blue { background: var(--primary-light); color: var(--primary); }
+
+.profile-quick-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-text strong {
+  font-size: 16px;
+}
+
+.stat-text span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.settings-list h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border-radius: var(--radius-lg);
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.setting-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  color: var(--primary);
+}
+
+.setting-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-info strong {
+  font-size: 15px;
+}
+
+.setting-info span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.logout-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  color: var(--urgent);
+  background: #FEF2F2;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

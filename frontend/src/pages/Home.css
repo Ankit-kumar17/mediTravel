@@ -1,0 +1,205 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.user-profile img {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  border: 2px solid white;
+  box-shadow: var(--shadow-sm);
+}
+
+.welcome p {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.welcome h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-btn .dot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background: var(--urgent);
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.appointment-banner {
+  background: var(--primary-gradient);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-content {
+  flex: 1;
+  z-index: 1;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.appointment-banner h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.appointment-meta {
+  display: flex;
+  gap: 12px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.appointment-banner img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: -10px 0 20px rgba(0,0,0,0.1);
+  transform: rotate(5deg);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.see-all {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.category-pill {
+  padding: 12px 8px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-main);
+  box-shadow: var(--shadow-sm);
+}
+
+.doctor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.doctor-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.doctor-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+.doctor-info h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.doctor-info p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.doctor-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}

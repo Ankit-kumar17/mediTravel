@@ -1,0 +1,158 @@
+.results-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.back-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.search-pill {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.filter-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+.filters-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.filters-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-chip {
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  background: white;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filter-chip.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.results-info {
+  margin-bottom: 16px;
+}
+
+.results-info h3 {
+  font-size: 18px;
+  color: var(--text-main);
+}
+
+.doctor-results {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.doctor-result-card {
+  padding: 12px;
+}
+
+.doc-main {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.doc-image {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+.doc-details {
+  flex: 1;
+}
+
+.rating-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #F59E0B;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.doc-details h3 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.doc-details .specialty {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.location-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.doc-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.price-tag {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.book-mini-btn {
+  background: var(--primary-light);
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 14px;
+}
