@@ -61,7 +61,7 @@ const Onboarding = () => {
           className="get-started-btn"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          onClick={() => navigate('/home')}
+          onClick={() => navigate('/login')}
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.8 }}

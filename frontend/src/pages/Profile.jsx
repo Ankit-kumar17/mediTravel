@@ -1,9 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { User, Settings, CreditCard, Bell, Shield, ChevronRight, LogOut, HeartPulse, ClipboardList } from 'lucide-react';
 import { motion } from 'framer-motion';
+import toast from 'react-hot-toast';
+import { useAuth } from '../context/AuthContext';
 import './Profile.css';
 
 const Profile = () => {
+  const navigate = useNavigate();
+  const { user, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    toast.success('Logged out successfully');
+    navigate('/login');
+  };
+
   const settingsOptions = [
     { icon: <ClipboardList size={20} />, label: 'Health Records', sub: 'Blood type, Allergies' },
     { icon: <CreditCard size={20} />, label: 'Payments', sub: 'Managed linked cards' },
@@ -68,10 +80,14 @@ const Profile = () => {
         ))}
       </section>
 
-      <button className="logout-btn">
+      <motion.button
+        className="logout-btn"
+        onClick={handleLogout}
+        whileTap={{ scale: 0.97 }}
+      >
         <LogOut size={20} />
         <span>Log Out</span>
-      </button>
+      </motion.button>
     </div>
   );
 };

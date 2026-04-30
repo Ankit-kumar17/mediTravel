@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { Toaster } from 'react-hot-toast';
+import { AuthProvider } from './context/AuthContext';
 
 // Page Imports
 import Onboarding from './pages/Onboarding';
@@ -12,6 +15,8 @@ import Profile from './pages/Profile';
 import Favorites from './pages/Favorites';
 import Booking from './pages/Booking';
 import Messages from './pages/Messages';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 // Component Imports
 import Navbar from './components/Navbar';
@@ -27,6 +32,9 @@ const PageTransition = ({ children }) => (
   </motion.div>
 );
 
+// Routes where navbar should be hidden
+const HIDE_NAVBAR_ROUTES = ['/', '/login', '/signup'];
+
 const AnimatedRoutes = () => {
   const location = useLocation();
 
@@ -34,6 +42,8 @@ const AnimatedRoutes = () => {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageTransition><Onboarding /></PageTransition>} />
+        <Route path="/login" element={<PageTransition><Login /></PageTransition>} />
+        <Route path="/signup" element={<PageTransition><Signup /></PageTransition>} />
         <Route path="/home" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/search" element={<PageTransition><SearchResults /></PageTransition>} />
         <Route path="/doctor/:id" element={<PageTransition><DoctorProfile /></PageTransition>} />
@@ -47,16 +57,53 @@ const AnimatedRoutes = () => {
   );
 };
 
-const App = () => {
+const AppLayout = () => {
+  const location = useLocation();
+  const hideNavbar = HIDE_NAVBAR_ROUTES.includes(location.pathname);
+
   return (
-    <Router>
-      <div className="app-container">
-        <main>
-          <AnimatedRoutes />
-        </main>
-        <Navbar />
-      </div>
-    </Router>
+    <div className="app-container">
+      <main>
+        <AnimatedRoutes />
+      </main>
+      {!hideNavbar && <Navbar />}
+    </div>
+  );
+};
+
+const App = () => {
+  // Replace with your actual Google Client ID from Google Cloud Console
+  const googleClientId = import.meta.env.VITE_GOOGLE_CLIENT_ID || 'your_google_client_id_here';
+
+  return (
+    <GoogleOAuthProvider clientId={googleClientId}>
+      <AuthProvider>
+        <Router>
+          <AppLayout />
+          <Toaster
+            position="top-center"
+            toastOptions={{
+              duration: 3000,
+              style: {
+                background: '#1F2937',
+                color: '#F9FAFB',
+                borderRadius: '12px',
+                padding: '14px 20px',
+                fontSize: '14px',
+                fontWeight: '500',
+                boxShadow: '0 10px 40px rgba(0, 0, 0, 0.15)',
+              },
+              success: {
+                iconTheme: { primary: '#10B981', secondary: '#F9FAFB' },
+              },
+              error: {
+                iconTheme: { primary: '#EF4444', secondary: '#F9FAFB' },
+              },
+            }}
+          />
+        </Router>
+      </AuthProvider>
+    </GoogleOAuthProvider>
   );
 };
 
