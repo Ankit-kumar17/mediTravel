@@ -118,6 +118,12 @@ meditravel-assist/
 
 ---
 
+## 🎨 Figma Design
+
+🔗 [View Figma Design](https://www.figma.com/design/bEvXduTouDMjD3L5K7MYTO/beauty-project-figma?node-id=52-2&m=dev&t=7Zv35vRrdQqDsNBk-1)
+
+---
+
 ## 🙌 Conclusion
 
 MediTravel Assist bridges the gap between travelers and healthcare services by making medical assistance accessible, transparent, and reliable in any city.
