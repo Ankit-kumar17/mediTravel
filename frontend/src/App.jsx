@@ -17,6 +17,7 @@ import Booking from './pages/Booking';
 import Messages from './pages/Messages';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Settings from './pages/Settings';
 
 // Component Imports
 import Navbar from './components/Navbar';
@@ -33,7 +34,7 @@ const PageTransition = ({ children }) => (
 );
 
 // Routes where navbar should be hidden
-const HIDE_NAVBAR_ROUTES = ['/', '/login', '/signup'];
+const HIDE_NAVBAR_ROUTES = ['/', '/login', '/signup', '/settings'];
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -44,6 +45,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<PageTransition><Onboarding /></PageTransition>} />
         <Route path="/login" element={<PageTransition><Login /></PageTransition>} />
         <Route path="/signup" element={<PageTransition><Signup /></PageTransition>} />
+        <Route path="/settings" element={<PageTransition><Settings /></PageTransition>} />
         <Route path="/home" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/search" element={<PageTransition><SearchResults /></PageTransition>} />
         <Route path="/doctor/:id" element={<PageTransition><DoctorProfile /></PageTransition>} />

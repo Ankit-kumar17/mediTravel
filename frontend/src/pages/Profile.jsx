@@ -27,7 +27,12 @@ const Profile = () => {
     <div className="profile-page-container page-wrapper">
       <header className="profile-header">
         <h1>My Profile</h1>
-        <button className="settings-btn glass"><Settings size={20} /></button>
+        <button 
+          className="settings-btn glass" 
+          onClick={() => navigate('/settings')}
+        >
+          <Settings size={20} />
+        </button>
       </header>
 
       <section className="profile-user-card card">
