@@ -30,7 +30,7 @@ const Settings = () => {
     onSubmit: async (values) => {
       setLoading(true);
       try {
-        const { data } = await axios.put('http://localhost:5000/api/auth/profile', values);
+        const { data } = await axios.put(`${import.meta.env.VITE_API_URL}/auth/profile`, values);
         
         // Update local state by re-storing the new token and user data
         localStorage.setItem('meditravel_token', data.token);
