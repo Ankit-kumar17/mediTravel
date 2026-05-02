@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, Globe, ShieldCheck, ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import './Onboarding.css';
 
 const Onboarding = () => {
@@ -15,6 +16,12 @@ const Onboarding = () => {
 
   return (
     <div className="onboarding-container">
+      <SEO
+        title="MediTravel Assist"
+        description="Find trusted doctors and hospitals while traveling. Transparent pricing, multi-language support, and emergency medical assistance in any city."
+        keywords="medical tourism, healthcare travel, find doctors abroad, hospital search, emergency medical help"
+        path="/"
+      />
       <div className="hero-section">
         <motion.div 
           initial={{ scale: 0.9, opacity: 0 }}

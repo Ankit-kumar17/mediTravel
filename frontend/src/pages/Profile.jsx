@@ -4,6 +4,7 @@ import { User, Settings, CreditCard, Bell, Shield, ChevronRight, LogOut, HeartPu
 import { motion } from 'framer-motion';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
+import SEO from '../components/SEO';
 import './Profile.css';
 
 const Profile = () => {
@@ -25,6 +26,12 @@ const Profile = () => {
 
   return (
     <div className="profile-page-container page-wrapper">
+      <SEO
+        title="My Profile"
+        description="Manage your MediTravel profile, health records, payment methods, and account settings."
+        keywords="profile, account settings, health records, meditravel account"
+        path="/profile"
+      />
       <header className="profile-header">
         <h1>My Profile</h1>
         <button 

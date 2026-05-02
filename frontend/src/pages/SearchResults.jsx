@@ -3,6 +3,7 @@ import { Search, Filter, Star, MapPin, ChevronLeft } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { doctors as allDoctors } from '../data/mockData';
+import SEO from '../components/SEO';
 import './SearchResults.css';
 
 const SearchResults = () => {
@@ -29,6 +30,12 @@ const SearchResults = () => {
 
   return (
     <div className="search-results-container page-wrapper">
+      <SEO
+        title="Search Doctors"
+        description="Search and filter verified doctors by specialty, location, and ratings. Find the best healthcare providers near you."
+        keywords="search doctors, find specialists, doctor ratings, medical search"
+        path="/search"
+      />
       <header className="results-header">
         <button onClick={() => navigate('/home')} className="back-btn glass">
           <ChevronLeft size={24} />

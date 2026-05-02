@@ -7,6 +7,7 @@ import { GoogleLogin } from '@react-oauth/google';
 import { Mail, Lock, Eye, EyeOff, ArrowRight, AlertCircle, Heart } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
+import SEO from '../components/SEO';
 import './Login.css';
 
 const loginSchema = Yup.object().shape({
@@ -67,6 +68,12 @@ const Login = () => {
 
   return (
     <div className="auth-page">
+      <SEO
+        title="Login"
+        description="Sign in to MediTravel Assist to access your medical travel dashboard, book appointments, and find doctors."
+        keywords="login, sign in, meditravel account, medical travel login"
+        path="/login"
+      />
       {/* Animated background */}
       <div className="auth-bg-gradient" />
       <div className="auth-orb auth-orb-1" />

@@ -7,6 +7,7 @@ import { GoogleLogin } from '@react-oauth/google';
 import { Mail, Lock, Eye, EyeOff, User, ArrowRight, AlertCircle, Heart } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/AuthContext';
+import SEO from '../components/SEO';
 import './Login.css';
 import './Signup.css';
 
@@ -99,6 +100,12 @@ const Signup = () => {
 
   return (
     <div className="auth-page">
+      <SEO
+        title="Sign Up"
+        description="Create your MediTravel Assist account. Join thousands of travelers finding world-class medical care abroad."
+        keywords="sign up, create account, meditravel registration, medical tourism signup"
+        path="/signup"
+      />
       {/* Animated background */}
       <div className="auth-bg-gradient" />
       <div className="auth-orb auth-orb-1" />

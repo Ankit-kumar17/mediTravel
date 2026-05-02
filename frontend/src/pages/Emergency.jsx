@@ -1,6 +1,7 @@
 import React from 'react';
 import { Phone, MapPin, Navigation, ShieldAlert, Heart, Truck } from 'lucide-react';
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import './Emergency.css';
 
 const Emergency = () => {
@@ -12,6 +13,12 @@ const Emergency = () => {
 
   return (
     <div className="emergency-container page-wrapper">
+      <SEO
+        title="Emergency Help"
+        description="Get immediate emergency medical assistance. Find nearest hospitals, ambulance services, and emergency contacts while traveling."
+        keywords="emergency medical help, ambulance, nearest hospital, SOS, emergency contacts"
+        path="/emergency"
+      />
       <header className="emergency-header">
         <h1>Emergency Help</h1>
         <p>Immediate medical assistance is just a tap away.</p>

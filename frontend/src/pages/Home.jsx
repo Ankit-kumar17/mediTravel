@@ -3,6 +3,7 @@ import { Search, Bell, MapPin, ArrowRight, Calendar, MessageCircle } from 'lucid
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { categories, doctors, mockAppointments } from '../data/mockData';
+import SEO from '../components/SEO';
 import './Home.css';
 
 const Home = () => {
@@ -10,6 +11,12 @@ const Home = () => {
 
   return (
     <div className="home-container page-wrapper">
+      <SEO
+        title="Home"
+        description="Find trusted doctors and hospitals near you. Book appointments, view ratings, and get emergency medical help while traveling."
+        keywords="find doctors, hospital search, book appointment, medical tourism, healthcare"
+        path="/home"
+      />
       <header className="home-header">
         <div className="user-profile" onClick={() => navigate('/profile')}>
           <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=100" alt="User" />

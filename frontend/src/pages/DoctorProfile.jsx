@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ChevronLeft, Share2, Heart, Star, MapPin, Clock, MessageSquare } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { doctors } from '../data/mockData';
+import SEO from '../components/SEO';
 import './DoctorProfile.css';
 
 const DoctorProfile = () => {
@@ -12,6 +13,12 @@ const DoctorProfile = () => {
 
   return (
     <div className="doctor-profile-container">
+      <SEO
+        title={`Dr. ${doctor.name} — ${doctor.specialty}`}
+        description={`Book an appointment with ${doctor.name}, ${doctor.specialty}. Located at ${doctor.location}. Rating: ${doctor.rating}/5.`}
+        keywords={`${doctor.name}, ${doctor.specialty}, doctor appointment, book doctor`}
+        path={`/doctor/${id}`}
+      />
       <header className="profile-header-overlay">
         <div className="header-actions">
           <button onClick={() => navigate(-1)} className="action-btn glass">

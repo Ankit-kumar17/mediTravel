@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ChevronLeft, Calendar, Clock, CreditCard, ChevronRight, CheckCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { doctors } from '../data/mockData';
+import SEO from '../components/SEO';
 import './Booking.css';
 
 const Booking = () => {
@@ -30,6 +31,12 @@ const Booking = () => {
 
   return (
     <div className="booking-page page-wrapper">
+      <SEO
+        title={`Book ${doctor.name}`}
+        description={`Book an appointment with ${doctor.name}, ${doctor.specialty}. Select date, time, and pay securely.`}
+        keywords="book doctor, appointment booking, medical appointment, consultation"
+        path={`/booking/${doctorId}`}
+      />
       <header className="booking-header">
         <button onClick={() => step === 3 ? navigate('/home') : setStep(step - 1 || 1)} className="back-btn glass">
           <ChevronLeft size={24} />
