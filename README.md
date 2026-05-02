@@ -83,4 +83,3 @@ meditravel-assist/
 💳 Insurance integration
 🙌 Conclusion
 MediTravel Assist bridges the gap between travelers and healthcare services by making medical assistance accessible, transparent, and reliable in any city.
-
