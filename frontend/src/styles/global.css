@@ -234,34 +234,8 @@ main {
   color: #AA3BFF;
 }
 
-/* Global Theme Toggle Position */
-.global-actions {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 2000;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-}
 
-.global-notify-btn {
-  background: var(--bg) !important;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--border) !important;
-}
 
-.global-notify-btn .dot {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 8px;
-  height: 8px;
-  background: var(--urgent);
-  border-radius: 50%;
-  border: 2px solid var(--surface);
-}
 
 
 

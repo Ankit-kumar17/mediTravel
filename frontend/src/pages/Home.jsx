@@ -28,7 +28,12 @@ const Home = () => {
           </div>
         </div>
         <div className="header-actions">
+          <button className="icon-btn glass" onClick={() => navigate('/profile')}>
+            <Bell size={20} />
+            <span className="dot"></span>
+          </button>
         </div>
+
 
 
       </header>
