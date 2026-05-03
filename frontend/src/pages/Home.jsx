@@ -27,7 +27,8 @@ const Home = () => {
             <h3>How are you today?</h3>
           </div>
         </div>
-        <div className="header-actions">
+        <div className="home-header-actions">
+
           <button className="icon-btn glass" onClick={() => navigate('/profile')}>
             <Bell size={20} />
             <span className="dot"></span>

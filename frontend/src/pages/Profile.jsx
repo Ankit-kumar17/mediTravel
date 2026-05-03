@@ -36,11 +36,14 @@ const Profile = () => {
       />
       <header className="profile-header">
         <h1>My Profile</h1>
-        <button className="icon-btn glass" onClick={() => navigate('/profile')}>
-          <Bell size={20} />
-          <span className="dot"></span>
-        </button>
+        <div className="profile-header-actions">
+          <button className="icon-btn glass" onClick={() => navigate('/profile')}>
+            <Bell size={20} />
+            <span className="dot"></span>
+          </button>
+        </div>
       </header>
+
 
 
 
