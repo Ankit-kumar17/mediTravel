@@ -5,10 +5,11 @@
 }
 
 .home-header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
   align-items: center;
-  padding: 8px 0;
+  padding: 12px 0;
+  width: 100%;
 }
 
 .user-profile {
@@ -17,6 +18,8 @@
   gap: 12px;
   cursor: pointer;
 }
+
+
 
 .user-profile img {
   width: 44px;
@@ -36,10 +39,14 @@
   font-weight: 700;
 }
 
-.header-actions {
+.home-header-actions {
+  margin-left: auto;
   display: flex;
   gap: 8px;
+  align-items: center;
 }
+
+
 
 .icon-btn {
   width: 40px;

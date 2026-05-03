@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { AnimatePresence, motion } from 'framer-motion';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { Toaster } from 'react-hot-toast';
-import { Bell } from 'lucide-react';
 import { HelmetProvider } from 'react-helmet-async';
-
 import { AuthProvider } from './context/AuthContext';
+
 import { ThemeProvider } from './context/ThemeContext';
+
 
 
 // Page Imports
@@ -72,15 +72,7 @@ const AppLayout = () => {
 
   return (
     <div className="app-container">
-      <div className="global-actions">
-        <ThemeToggle />
-        <button className="icon-btn glass global-notify-btn" onClick={() => window.location.href='/profile'}>
-          <Bell size={20} />
-          <span className="dot"></span>
-        </button>
-      </div>
       <main>
-
         <AnimatedRoutes />
       </main>
       {!hideNavbar && <Navbar />}

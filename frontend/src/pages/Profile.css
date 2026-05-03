@@ -9,6 +9,11 @@
   font-size: 24px;
 }
 
+.profile-header-actions {
+  margin-left: auto;
+}
+
+
 .settings-btn {
   width: 44px;
   height: 44px;
