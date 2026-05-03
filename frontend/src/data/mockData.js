@@ -20,7 +20,7 @@ export const doctors = [
     patients: '2000+',
     successRate: '98%',
     bio: 'Dr. Sarah Johnson is a highly experienced cardiologist specializing in non-invasive cardiac imaging and preventive cardiology. With over 15 years of international experience, she has treated patients across Europe and Asia.',
-    image: 'https://images.unsplash.com/photo-1559839734-2b71f1536783?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&q=80&w=600',
     availability: ['9:00 AM', '10:30 AM', '1:00 PM', '3:30 PM']
   },
   {
@@ -99,7 +99,7 @@ export const mockMessages = [
     lastMessage: 'Your test results are looking great. Let\'s discuss them in our next session.',
     time: '2:34 PM',
     unread: true,
-    avatar: 'https://images.unsplash.com/photo-1559839734-2b71f1536783?auto=format&fit=crop&q=80&w=100'
+    avatar: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&q=80&w=100'
   },
   {
     id: 2,
