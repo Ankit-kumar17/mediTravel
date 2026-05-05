@@ -1,19 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ChevronLeft, Calendar, Clock, CreditCard, ChevronRight, CheckCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { doctors } from '../data/mockData';
+import { doctors as mockDoctors } from '../data/mockData';
 import SEO from '../components/SEO';
+import axios from 'axios';
 import './Booking.css';
 
 const Booking = () => {
   const { doctorId } = useParams();
   const navigate = useNavigate();
-  const doctor = doctors.find(d => d.id === parseInt(doctorId)) || doctors[0];
   
+  const [doctor, setDoctor] = useState(mockDoctors.find(d => d.id === parseInt(doctorId)) || mockDoctors[0]);
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [step, setStep] = useState(1); // 1: Date/Time, 2: Payment, 3: Success
+
+  useEffect(() => {
+    const fetchDoctor = async () => {
+      try {
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/doctors/${doctorId}`);
+        if (res.data) {
+          // ensure availability array exists as mockData has it
+          const fetchedDoc = { ...res.data, availability: res.data.availability || ['10:00 AM', '1:00 PM', '4:00 PM'] };
+          setDoctor(fetchedDoc);
+        }
+      } catch (error) {
+        console.error("Failed to fetch doctor from backend", error);
+      }
+    };
+    if (doctorId) {
+      fetchDoctor();
+    }
+  }, [doctorId]);
 
   const dates = [
     { day: 'Mon', date: 24, month: 'Oct' },

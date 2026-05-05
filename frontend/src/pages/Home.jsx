@@ -1,15 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search, Bell, MapPin, ArrowRight, Calendar, MessageCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { categories, doctors, mockAppointments } from '../data/mockData';
+import { categories, doctors as mockDoctors, mockAppointments } from '../data/mockData';
 import SEO from '../components/SEO';
+import axios from 'axios';
 import './Home.css';
-
-
 
 const Home = () => {
   const navigate = useNavigate();
+  const [doctors, setDoctors] = useState(mockDoctors);
+
+  useEffect(() => {
+    const fetchDoctors = async () => {
+      try {
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/doctors`);
+        if (res.data && res.data.length > 0) {
+          setDoctors(res.data);
+        }
+      } catch (error) {
+        console.error("Failed to fetch doctors from backend, using mock data", error);
+      }
+    };
+    fetchDoctors();
+  }, []);
 
   return (
     <div className="home-container page-wrapper">
