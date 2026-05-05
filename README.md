@@ -126,9 +126,11 @@ meditravel-assist/
 
 ## 🔗 Project Links
 
-- **🌐 Live Deployed Project (Frontend):** [https://frontend-three-navy-13.vercel.app](https://frontend-three-navy-13.vercel.app)
-- **⚙️ Backend API Link:** `http://localhost:5000/api` *(Currently Local)*
-- **📄 Postman API Documentation:** `[Insert your Postman Public Link Here]`
+| Resource | Link | Status |
+|----------|------|--------|
+| **🌐 Live Website** | [https://frontend-three-navy-13.vercel.app](https://frontend-three-navy-13.vercel.app) | 🟢 Active |
+| **⚙️ Backend API** | [http://localhost:5000/api](http://localhost:5000/api) | 🟡 Local Environment |
+| **📄 Postman Docs** | [🔗 Click here to view API Docs](#) | 🔵 Update Link Here |
 
 ---
 
