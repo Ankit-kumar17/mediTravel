@@ -124,6 +124,14 @@ meditravel-assist/
 
 ---
 
+## 🔗 Project Links
+
+- **🌐 Live Deployed Project (Frontend):** [https://frontend-three-navy-13.vercel.app](https://frontend-three-navy-13.vercel.app)
+- **⚙️ Backend API Link:** `http://localhost:5000/api` *(Currently Local)*
+- **📄 Postman API Documentation:** `[Insert your Postman Public Link Here]`
+
+---
+
 ## 🙌 Conclusion
 
 MediTravel Assist bridges the gap between travelers and healthcare services by making medical assistance accessible, transparent, and reliable in any city.
