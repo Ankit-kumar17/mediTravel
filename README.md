@@ -128,6 +128,7 @@ meditravel-assist/
 
 | Resource | Link | Status |
 |----------|------|--------|
+| **📺 Demo Video** | [youtu.be/l6imaWG1SMw](https://youtu.be/l6imaWG1SMw) | 🔴 YouTube |
 | **🌐 Live Website** | [https://frontend-three-navy-13.vercel.app](https://frontend-three-navy-13.vercel.app) | 🟢 Active |
 | **⚙️ Backend API** | [http://localhost:5000/api](http://localhost:5000/api) | 🟡 Local Environment |
 | **📄 Postman Docs** | [🔗 Click here to view API Docs](#) | 🔵 Update Link Here |
