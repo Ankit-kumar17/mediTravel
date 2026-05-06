@@ -100,6 +100,35 @@ meditravel-assist/
 
 ---
 
+## 📸 App Screenshots
+
+Here is a glimpse of the MediTravel Assist platform:
+
+<table align="center">
+  <tr>
+    <td align="center"><b>Home Dashboard</b></td>
+    <td align="center"><b>Doctor Search</b></td>
+    <td align="center"><b>Emergency Help</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/home.png" width="250" alt="Home Dashboard"></td>
+    <td><img src="screenshots/search.png" width="250" alt="Doctor Search"></td>
+    <td><img src="screenshots/emergency.png" width="250" alt="Emergency Help"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>User Profile</b></td>
+    <td align="center"><b>Settings</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/profile.png" width="250" alt="User Profile"></td>
+    <td><img src="screenshots/settings.png" width="250" alt="Settings"></td>
+    <td></td>
+  </tr>
+</table>
+
+---
+
 ## 📉 Impact
 
 - ⏱ Faster medical access
