@@ -4,16 +4,10 @@
 
 | Resource | Link | Status |
 |----------|------|--------|
-
-
-   ## 🎨 Figma Design
-  🔗 [View Figma Design](https://www.figma.com/design/bEvXduTouDMjD3L5K7MYTO/beauty-project-figma?node-id=52-2&m=dev&t=7Zv35vRrdQqDsNBk-1)
-  
-| **📺 Demo Video** | [youtu.be/l6imaWG1SMw](https://youtu.be/l6imaWG1SMw) | 🔴 YouTube |
-
 | **🌐 Live Website** | [https://frontend-three-navy-13.vercel.app](https://frontend-three-navy-13.vercel.app) | 🟢 Active |
+| **🎨 Figma Design** | [View Figma Design](https://www.figma.com/design/bEvXduTouDMjD3L5K7MYTO/beauty-project-figma?node-id=52-2&m=dev&t=7Zv35vRrdQqDsNBk-1) | 🔵 Design |
+| **⚙️ Backend API** | [http://localhost:5000/api](http://localhost:5000/api) | 🟡 Local |
 
-| **⚙️ Backend API** | [http://localhost:5000/api](http://localhost:5000/api) |  |
 
 | **📄 Postman Docs** | [🔗 Click here to view API Docs](#) | 🔵 Update Link Here |
 
