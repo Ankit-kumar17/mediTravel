@@ -1,4 +1,4 @@
-# 🚑 MediTravel Assist
+# 🚑 MediTravel Assists
 
 ## 🔗 Project Links
 
